@@ -1,4 +1,6 @@
 import asyncio
+from dis import disco
+from io import BytesIO
 import discord
 import logger
 from discord.ext import commands
@@ -87,5 +89,7 @@ class CommandBot(commands.Cog, name='Bot management module'):
 
 class CommandLogger(commands.Cog, name='Log management module'):
     @commands.command(name="Log")
-    async def log(self,ctx):
-        await ctx.send(file=discord.File('my_image.txt'))
+    async def log(self,ctx,c: str):
+        channel = discord.utils.get(ctx.guild.channels, name=c)
+        channel_id = channel.id
+        await ctx.channel.send(channel_id)
