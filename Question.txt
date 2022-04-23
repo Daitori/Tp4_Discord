@@ -1,0 +1,3 @@
+#Qu’est-ce qu’un bot ?
+
+#Qu'est ce que le logging. À quoi servent les logs?
