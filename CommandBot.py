@@ -88,8 +88,9 @@ class CommandBot(commands.Cog, name='Bot management module'):
         await ctx.guild.me.edit(nick=name)
 
 class CommandLogger(commands.Cog, name='Log management module'):
-    @commands.command(name="Log")
-    async def log(self,ctx,c: str):
+    @commands.command(name="ChannelID")
+    async def ID(self,ctx,c: str):
         channel = discord.utils.get(ctx.guild.channels, name=c)
         channel_id = channel.id
         await ctx.channel.send(channel_id)
+    
