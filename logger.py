@@ -1,5 +1,6 @@
 import discord
 import logging
+
 def logger():
     logger = logging.getLogger('discord')
     logger.setLevel(logging.DEBUG)
