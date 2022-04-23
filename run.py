@@ -1,10 +1,10 @@
 import discord
 from CustomClient import CustomBotClient
-import CommandBot
+import Tp4_Discord.CommandBot as CommandBot
 from ErrorCommandManager import CommandErrHandler
 
 def main():
-    token = "OTY0NDIxMjcwNTkyNzEyNzE0.YlkZTA.a4OoDjWJmv-FB1nmhBLw1iYY7b0"
+    token = "token"
     intents = discord.Intents.default()
     intents.members = True
 
